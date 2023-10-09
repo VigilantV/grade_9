@@ -1,0 +1,29 @@
+.content {
+  direction: rtl;
+  margin: 14vw 5vw 0 0;
+
+  li {
+    font-size: 1.5vw;
+    margin: 1.5vw 3vw 0 0;
+  }
+}
+
+.title {
+  font-size: 1.6vw;
+}
+
+.sample_content {
+  position: absolute;
+  text-align: center;
+  top: 21.7vw;
+  left: 8vw;
+
+  img {
+    width: 5vw;
+  }
+
+  p{
+    font-size: 1.2vw;
+    margin-top: 0.5vw;
+  }
+}

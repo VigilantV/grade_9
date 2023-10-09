@@ -1,0 +1,40 @@
+@use "../global/variables.module.scss" as *;
+
+.navbar {
+  position: fixed;
+  top: 7.5vw;
+  width: 100vw;
+  padding: 1vw 0 0.5vw;
+  background-color: #d2d3d5;
+}
+
+.nav_buttons {
+  button {
+    position: relative;
+    font-size: 1.6vw;
+    margin-left: 3vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: text-shadow 0.2s;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -0.2vw;
+      left: 50%;
+      width: 0;
+      height: 0.15vw;
+      border-radius: 1vw;
+      background: $pinkyOrange;
+      transition: width 0.3s, left 0.3s;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.is_active {
+  text-shadow: -1px -1px 10px $pinkyOrange;
+}

@@ -1,0 +1,49 @@
+@use "./global/variables.module.scss" as *;
+
+.content {
+  direction: rtl;
+  margin: 14vw 3vw 0 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.4vw;
+    margin: 1vw 3vw 0 0;
+  }
+}
+
+.head {
+  font-size: 1.6vw;
+  margin-bottom: 2vw;
+}
+
+.circle {
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.python_edu {
+  align-items: flex-start !important;
+
+  .circle {
+    margin-top: 0.8vw;
+  }
+
+  a {
+    margin: 0 0.4vw;
+  }
+}
+
+.links {
+  text-decoration: none;
+  color: $pinkyOrange;
+  cursor: pointer;
+}
+
+.teached_file_title {
+  margin-top: 2vw;
+  font-size: 1.6vw;
+}

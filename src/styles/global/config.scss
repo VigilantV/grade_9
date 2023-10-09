@@ -1,0 +1,31 @@
+@use "./variables.module.scss" as *;
+
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans"),
+    url(../../assets/fonts/IRANSans.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: calibri, "sans-serif";
+}
+
+body {
+  background-color: $lightGray;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background: $whitish;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $pinkyOrange;
+}

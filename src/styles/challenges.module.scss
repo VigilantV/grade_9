@@ -1,0 +1,60 @@
+@use "./global/variables.module.scss" as *;
+
+.challenges {
+  margin-top: 14vw;
+
+  p {
+    height: 3.2vw;
+    text-align: center;
+    padding-top: 0.7vw;
+    border-radius: 1vw;
+  }
+}
+
+.title_row {
+  display: flex;
+  justify-content: center;
+  gap: 0.7vw;
+  font-size: 1.4vw;
+  margin-bottom: 0.7vw;
+}
+
+.title_element {
+  font-weight: 600;
+  color: $pinkyOrange !important;
+}
+
+.challenge {
+  display: flex;
+  gap: 0.7vw;
+  width: 67.4vw;
+  margin-left: 16.3vw;
+  font-size: 1.4vw;
+  margin-bottom: 0.7vw;
+  cursor: pointer;
+
+  &:hover {
+    p {
+      transition: background-color 0.2s;
+      background-color: $gray;
+    }
+  }
+}
+
+.first_col {
+  width: 12vw;
+  color: $pinkyOrange;
+  background-color: $darkGray;
+}
+
+.second_col {
+  width: 37vw;
+  color: $whitish;
+  background-color: $darkGray;
+}
+
+.third_col {
+  width: 17vw;
+  color: $whitish;
+  background-color: $darkGray;
+}
