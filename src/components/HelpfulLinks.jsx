@@ -1,5 +1,5 @@
 import helpfulLinks from "../assets/data files/helpfulLinks";
-import teachedFiles from "../assets/data files/teachedFiles";
+import zipFiles from "../assets/data files/zipFiles";
 import downloadFile from "./common/downloadFile";
 
 import classes from "../styles/helpfulLinks.module.scss";
@@ -55,17 +55,15 @@ const HelpfulLinks = () => {
         </li>
       </ul>
       <div>
-        <p className={classes.teached_file_title}>
+        <p className={classes.zip_file_title}>
           دانلود فایل های کار شده داخل کلاس:
         </p>
-        {teachedFiles.map((teachedFile, i) => (
+        {zipFiles.map((zipFile, i) => (
           <li key={i}>
             <div className={classes.circle}></div>
-            <p>{teachedFile.title}:</p>
+            <p>{zipFile.title}:</p>
             <p
-              onClick={() =>
-                downloadFile(teachedFile.fileName, teachedFile.file)
-              }
+              onClick={() => downloadFile(zipFile.fileName, zipFile.file)}
               className={classes.links}
             >
               کلیک کنید
