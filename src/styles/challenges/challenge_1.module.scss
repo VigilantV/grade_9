@@ -1,15 +1,30 @@
+@use "../global/variables.module.scss" as *;
+
 .question {
   direction: rtl;
   display: flex;
   justify-content: space-between;
   margin: 14vw 5vw 1vw 35vw;
 
-  h2{
+  h2 {
     font-size: 1.6vw;
   }
 
-  img{
+  img {
     width: 20vw;
     height: 40vw;
   }
+}
+
+.circle {
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.links {
+  text-decoration: none;
+  color: $pinkyOrange;
+  cursor: pointer;
 }
