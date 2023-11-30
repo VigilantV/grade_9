@@ -22,7 +22,7 @@ const Challenges = ({ setActivePage }) => {
           }}
         >
           <p className={classes.first_col}>{i + 1}</p>
-          <p className={classes.second_col}>{`Challenge_${i + 1}`}</p>
+          <p className={classes.second_col}>{challenge.name}</p>
           <p className={classes.third_col}>{challenge.deadline}</p>
         </div>
       ))}
